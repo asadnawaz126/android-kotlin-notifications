@@ -85,3 +85,8 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
 }
 
 // TODO: Step 1.14 Cancel all notifications
+
+//function that cancels all active notifications
+fun NotificationManager.cancelNotification(){
+    cancelAll()
+}

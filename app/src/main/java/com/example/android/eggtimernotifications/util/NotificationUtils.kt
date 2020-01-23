@@ -75,23 +75,10 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         .setStyle(bigPictureStyle)
         .setLargeIcon(eggImage)
         .addAction(R.drawable.egg_icon,applicationContext.getString(R.string.snooze), snoozePendingIntent)
-
-
-    // TODO: Step 1.8 use the new 'breakfast' notification channel
-
-    // TODO: Step 1.3 set title, text and icon to builder
-
-    // TODO: Step 1.13 set content intent
+        .setPriority(NotificationCompat.PRIORITY_HIGH)
 
 
 
-        // TODO: Step 2.1 add style to builder
-
-        // TODO: Step 2.3 add snooze action
-
-        // TODO: Step 2.5 set priority
-
-    // TODO: Step 1.4 call notify
     notify(NOTIFICATION_ID, builder.build())
 }
 
